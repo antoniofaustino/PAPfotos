@@ -3,8 +3,9 @@ Route::get('/casamentos','FotoController@casamentos')->name('casamentos.casament
 Route::get('/batizados','FotoController@batizados')->name('batizados.batizados');
 Route::get('/events','FotoController@events')->name('events.events');
 Route::get('/people','FotoController@people')->name('people.people');
-Route::get('/casamentos/add','FotoController@adfoto')->name('adfoto.adfoto');
-Route::post('/casamentos','FotoController@addfoto_create')->name('addfoto.create');
+Route::get('/adicionarfoto','FotoController@fotos')->name('addfoto.fotos');
+Route::post('adicionarfoto','FotoController@addfoto')->name('addfoto.addfoto');
+
 
 // Route::get('/casamentos/adicionarfoto',function(){
 //     return view('casamento.adicionarfoto');

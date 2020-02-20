@@ -141,10 +141,9 @@
                     <a href="{{url('/contacto')}}">Contact</a>
                     <a style = "font-size: 30px;"href="{{url('/')}}"><img src="/photos/logo" height="150" width="150" style="border-radius: 50%;"></a>
                 </div> 
-                
-                
-
-                <button action="{{url('/casamentos/adicionarfoto')}}" method="post" class="btn btn-primary" enctype="multipart/form-data">Adicionar Foto</button>
+            @foreach ($files as $file)
+                <p>This is file {{ $file }}</p>
+            @endforeach
                 
 
     </body>

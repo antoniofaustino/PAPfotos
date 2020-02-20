@@ -165,8 +165,6 @@ html, body {
             @endif
     <br>
  
-    
-
                 <div style="text-align:right;" class="links">
                     <a href="{{url('/People')}}">People</a>
                     <a href="{{url('/casamentos')}}">Casamentos</a>

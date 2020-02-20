@@ -131,7 +131,10 @@
 <br>
 <br>
                 <div style="text-align:right;" class="links">
-                    
+                {{-- @auth('admin') --}}
+                   
+                     <a href="{{url('/adicionarfoto')}}">Adicionar Foto</a>
+                {{-- @endauth --}}
                     <a href="{{url('/about')}}">About</a>
                     <a href="{{url('/People')}}">People</a>
                     <a href="{{url('/casamentos')}}">Casamentos</a>
