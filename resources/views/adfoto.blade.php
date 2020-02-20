@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">    
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        </head>
-        <body>
-       
+@extends('menu.html')
+@extends('menu.menu')
+@section('content')
 
 
 <h1> Adicionar Foto</h1>
@@ -39,10 +31,10 @@
   {{csrf_field()}}
 <select name="opcoes">
 <option>Escolhe alguma</option>
-<option href="{{url('/casamentos')}}">Casamentos</option>
-<option>Batizados</option>
-<option>About</option>
-<option>People</option>
+<option value="casamentos">Casamento</option>
+<option value="batizados">Batizado</option>
+<option value="events">Event</option>
+<option value="people">People</option>
 </select>
         {{-- <div class="input-group control-group increment" > --}}
           <input type="file" name="photo" class="form-control"/>
@@ -71,5 +63,4 @@
     });
 
 </script>
-</body>
-</html>
+@endsection

@@ -1,89 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       
-    <title>Contact</title>
-
+@extends('menu.html')
+@extends('menu.menu')
+@section('content')
 
 <style>
     html, body {
-                 background: linear-gradient(to bottom, black 0%,black 50%,#000000 50%,white 50%,white 100%);
+                 background: linear-gradient(to bottom, #000000 50%,white 50%,white 100%, black 0%,black 50%);
                 color: black;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
 }
-    .links > a {
-                color: #999966;
-                padding: 10px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-            .position-ref {
-                position: relative;
-            }
-            .full-height {
-                height: 100vh;
-            }
-            .top-right {
-                position: absolute;
-                left: 10px;
-                top: 18px;
-            }
-            .down-center{
-                text-align:center;
-                down: 18px;
-
-            }
-            p{
-                margin-left:20px;
-            }
-            div{
-                color:#999966;
-            }
-
-
     </style>
-</head>
-<body>
-    <body>
-<div class=" position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-    <br>
-   
-    
-
-                <div style="text-align:right;" class="links">
-                 <a href="{{url('/about')}}">About</a>
-                    <a href="{{url('/People')}}">People</a>
-                    <a href="{{url('/casamentos')}}">Casamentos</a>
-                    <a href="{{url('/batizados')}}">Batizados</a>
-                    <a href="{{url('/events')}}">Events</a>
-                    <a style = "font-size: 30px;"href="{{url('/')}}"><img src="/photos/logo" height="150" width="150" style="border-radius: 50%;"></a>
-                    
-                </div> 
                 <div>
                     <p style="white-space:pre-wrap;">
                     <strong style="font-size:20px;">E-mail:</strong>
@@ -121,3 +50,4 @@
         </footer>
 </body>
 </html>  
+@endsection 

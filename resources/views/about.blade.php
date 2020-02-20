@@ -166,7 +166,7 @@ html, body {
     <br>
  
                 <div style="text-align:right;" class="links">
-                    <a href="{{url('/People')}}">People</a>
+                    <a href="{{url('/people')}}">People</a>
                     <a href="{{url('/casamentos')}}">Casamentos</a>
                     <a href="{{url('/batizados')}}">Batizados</a>
                     <a href="{{url('/events')}}">Events</a>
