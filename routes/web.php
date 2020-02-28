@@ -1,10 +1,10 @@
 <?php
-Route::get('/casamentos','FotoController@casamentos')->name('casamentos.casamentos');
-Route::get('/batizados','FotoController@batizados')->name('batizados.batizados');
+Route::get('/batizado','FotoController@getPhotoBatizados')->name('batizados.batizado');
 Route::get('/events','FotoController@events')->name('events.events');
 Route::get('/people','FotoController@people')->name('people.people');
-Route::get('/adicionarfoto','FotoController@fotos')->name('addfoto.fotos');
+Route::get('/adicionarfoto','FotoController@fotos')->name('addfoto.fotos')->middleware('auth');
 Route::post('adicionarfoto','FotoController@addfoto')->name('addfoto.addfoto');
+Route::get('/casamento','FotoController@getPhotoCasamentos')->name('casamentos.casamentos');
 
 
 // Route::get('/casamentos/adicionarfoto',function(){

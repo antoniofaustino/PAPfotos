@@ -84,7 +84,7 @@
             .links > a {
                 color: #808080;
                 padding: 0 10px;
-                font-size: 11px;
+                font-size: 13px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
@@ -101,12 +101,28 @@
             .fa:hover {
     opacity: 0.7;
 }
-
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
       
     
         </style>
     </head>
     <body>
     @yield('content')
+    <footer class="footer" >
+               <a class="fb-ic" href="https://www.facebook.com/photography2M/">
+                    <i class="fa fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                </a>
+                <a class="ins-ic" href="https://www.instagram.com/p/BzEC89MHGIT/">
+                    <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+                </a>   
+        </footer>
     </body>
 </html>

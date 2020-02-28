@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Batizados extends Migration
+class CreateAdicionarfotosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,11 @@ class Batizados extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('adicionarfotos', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('image');
+            $table->text('description');
+        });
     }
 
     /**
@@ -23,6 +27,6 @@ class Batizados extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('adicionarfotos');
     }
 }
