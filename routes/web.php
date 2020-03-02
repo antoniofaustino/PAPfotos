@@ -1,6 +1,6 @@
 <?php
 Route::get('/batizado','FotoController@getPhotoBatizados')->name('batizados.batizado');
-Route::get('/events','FotoController@events')->name('events.events');
+Route::get('/event','FotoController@getPhotoEvent')->name('events.event');
 Route::get('/people','FotoController@people')->name('people.people');
 Route::get('/adicionarfoto','FotoController@fotos')->name('addfoto.fotos')->middleware('auth');
 Route::post('adicionarfoto','FotoController@addfoto')->name('addfoto.addfoto');

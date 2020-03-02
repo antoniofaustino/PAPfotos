@@ -11,12 +11,15 @@ class CreateAdicionarfotosTable extends Migration
      *
      * @return void
      */
+
+    
     public function up()
     {
         Schema::create('adicionarfotos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('image');
             $table->text('description');
+            $table->timestamps();
         });
     }
 

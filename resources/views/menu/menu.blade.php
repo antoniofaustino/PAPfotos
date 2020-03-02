@@ -34,7 +34,7 @@
                     <a href="{{url('/people')}}">People</a>
                     <a href="{{url('/casamento')}}">Casamentos</a>
                     <a href="{{url('/batizado')}}">Batizados</a>
-                    <a href="{{url('/events')}}">Events</a>
+                    <a href="{{url('/event')}}">Events</a>
                     <a href="{{url('/contacto')}}">Contact</a>
                     <a style = "font-size: 30px;"href="{{url('/')}}"><img src="/photos/logo" height="150" width="150" style="border-radius: 50%;"></a>
                 </div> 

@@ -36,18 +36,8 @@
                     <strong style="font-size:20px;">Telemovel:</strong>
                     916644180
                 </div>
-    <br>
-    <br>
-    <br>
-
-    <footer class="page-footer font-small cyan darken-3 down-center" >
-                <a class="fb-ic" href="https://pt-pt.facebook.com/photography2M/">
-                    <i class="fa fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-                </a>
-                <a class="ins-ic" href="https://www.instagram.com/p/BzEC89MHGIT/">
-                    <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-                </a>   
-        </footer>
+   
+   
 </body>
 </html>  
 @endsection 

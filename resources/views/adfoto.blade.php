@@ -39,7 +39,7 @@
 <br>
         {{-- <div class="input-group control-group increment" > --}}
         <div class="custom-file">
-          <input type="file" class="custom-file-input"  name="photo" id="inputGroupFile01">
+          <input type="file" class="custom-file-input"  name="photo" id="inputGroupFile01" multiple >
             <label class="custom-file-label" for="inputGroupFile01">Escolhe o ficheiro</label>
         </div>
           {{-- <input type="file" name="photo" class="form-control"/>
