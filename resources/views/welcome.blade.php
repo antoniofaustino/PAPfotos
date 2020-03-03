@@ -143,6 +143,8 @@
                 <div style="text-align:right;" class="links">
                 {{-- @auth('admin') --}}
                     @auth
+                     <a href="{{url('/calendario')}}">Calendario</a>
+                    
                      <a href="{{url('/adicionarfoto')}}">Adicionar Foto</a>
                     @endauth
                 {{-- @endauth --}}

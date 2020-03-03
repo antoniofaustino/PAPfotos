@@ -6,6 +6,26 @@ Route::get('/adicionarfoto','FotoController@fotos')->name('addfoto.fotos')->midd
 Route::post('adicionarfoto','FotoController@addfoto')->name('addfoto.addfoto');
 Route::get('/casamento','FotoController@getPhotoCasamentos')->name('casamentos.casamentos');
 
+Route::get('/calendario', 'FullCalendarController@index')->name('index');
+
+Route::get('/load-events', 'EventController@loadEvents')->name('routeLoadEvents');
+
+Route::put('/event-update', 'EventController@update')->name('routeEventUpdate');
+
+Route::post('/event-store', 'EventController@store')->name('routeEventStore');
+
+Route::delete('/event-destroy', 'EventController@destroy')->name('routeEventDelete');
+
+
+/**
+ * Rotas para Eventos Rápidos
+ */
+Route::delete('/fast-event-destroy', 'FastEventController@destroy')->name('routeFastEventDelete');
+
+Route::put('/fast-event-update', 'FastEventController@update')->name('routeFastEventUpdate');
+
+Route::post('/fast-event-store', 'FastEventController@store')->name('routeFastEventStore');
+
 
 // Route::get('/casamentos/adicionarfoto',function(){
 //     return view('casamento.adicionarfoto');
