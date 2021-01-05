@@ -16,7 +16,7 @@
         "@fullcalendar/interaction": "^4.3.0",
         "@fullcalendar/list": "^4.3.0",
         "@fullcalendar/timegrid": "^4.3.0",
-        "axios": "^0.19",
+        "axios": "^0.21",
         "bootstrap": "^4.4.1",
         "cross-env": "^5.1",
         "jquery": "^3.4.1",
